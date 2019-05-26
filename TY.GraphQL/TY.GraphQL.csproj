@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>7f25dbfc-6319-4931-863d-7f11a0f53458</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="GraphiQL" Version="1.2.0" />
+    <PackageReference Include="GraphQL" Version="2.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.5.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TY.GraphQL.Application\TY.GraphQL.Application.csproj" />
+    <ProjectReference Include="..\TY.GraphQL.Persistence\TY.GraphQL.Persistence.csproj" />
+    <ProjectReference Include="..\TY.GraphQL.Utils\TY.GraphQL.Utils.csproj" />
+  </ItemGroup>
+
+</Project>
