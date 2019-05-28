@@ -35,7 +35,7 @@ namespace TY.GraphQL.Application.ProductVariant
         public async Task<IEnumerable<Data.Variant>> GetProductVariantByProductId(Guid productId)
         {
             var productVariants = _genericProductVariantRepository
-                .Filter(q => q.Product.Id.Equals(productId))
+                .Filter(q => q.ProductId.Equals(productId))
                 .Result
                 .Select(s => s.VariantId);
 
